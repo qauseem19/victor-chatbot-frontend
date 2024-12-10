@@ -124,12 +124,17 @@ const DynamicModal = ({
         return acc;
       }, {});
 
-  const handleSubmit = async (values) => {
-    if (fileInputRef.current && fileInputRef.current.files[0]) {
-      values.image = fileInputRef.current.files[0];
-    }
-    await onSubmit(values);
-  };
+      const handleSubmit = async (values, { setFieldError }) => {
+        if (!profileImage) {
+            alert("Profile image is required.");
+            return;
+        }
+        if (fileInputRef.current && fileInputRef.current.files[0]) {
+            values.image = fileInputRef.current.files[0];
+        }
+        await onSubmit(values);
+    };
+    
 
   useEffect(() => {
     if (initialValues) {
@@ -150,19 +155,23 @@ const DynamicModal = ({
         >
           {({ errors, touched }) => (
             <FormikForm>
-              <div className="d-flex justify-content-center mb-4">
-                <div
-                  className="profile-circle"
-                  onClick={() => fileInputRef.current.click()}
-                  style={{ cursor: "pointer" }}
-                >
-                  <img
-                    src={profileImage || "https://via.placeholder.com/150"}
-                    alt="Profile"
-                    className="rounded-circle"
-                  />
-                </div>
-              </div>
+            <Form.Group className="mb-3">
+  <Form.Label>Upload Profile Image</Form.Label> {/* Add Label Here */}
+  <div className="d-flex justify-content-center mb-4">
+    <div
+      className="profile-circle"
+      onClick={() => fileInputRef.current.click()}
+      style={{ cursor: "pointer" }}
+    >
+      <img
+        src={profileImage || "https://via.placeholder.com/150"}
+        alt="Profile"
+        className="rounded-circle"
+      />
+    </div>
+  </div>
+</Form.Group>
+
               <input
                 type="file"
                 ref={fileInputRef}

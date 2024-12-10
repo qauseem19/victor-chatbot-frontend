@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import PageTitle from "../../../../layouts/PageTitle";
 // images
 import qrcode from "../../../../../images/qr.png";
-import logo from "../../../../../images/logo.png";
+// import logo from "../../../../../images/logo.png";
 import logoText from "../../../../..//images/logo-text.png";
 // import { Link } from "react-router-dom";
 
@@ -48,7 +48,7 @@ const Invoice = () => {
                   <div className="row align-items-center">
                     <div className="col-sm-9">
                       <div className="brand-logo mb-3">
-                        <img className="logo-abbr me-2" src={logo} alt="" width="50px"/>{" "}
+                        {/* <img className="logo-abbr me-2" src={logo} alt="" width="50px"/>{" "} */}
                         <img className="logo-compact" src={logoText} alt="" width="110px"/>
                       </div>
                       <span>

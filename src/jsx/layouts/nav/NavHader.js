@@ -5,11 +5,11 @@ import { navtoggle } from "../../../store/actions/AuthActions";
 /// React router dom
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../../context/ThemeContext";
-import logoTextWhite from "../../../images/logo-text-white.png";
+// import logoTextWhite from "../../../images/logo-text-white.png";
 import logoText from "../../../images/logo-text.png";
-import logoWhite from "../../../images/logo-white.png";
+// import logoWhite from "../../../images/logo-white.png";
 /// images
-import logo from "../../../images/logo.png";
+// import logo from "../../../images/logo.png";
 
 const NavHader = () => {
     const dispatch = useDispatch();
@@ -26,9 +26,9 @@ const NavHader = () => {
       <Link to="/" className="brand-logo">
         {background.value === "dark" || navigationHader !== "color_1" ? (
           <Fragment>
-            <img className="logo-abbr" src={logoWhite} alt="" />
-            <img className="logo-compact" src={logoTextWhite} alt="" />
-            <img className="brand-title" src={logoTextWhite} alt="" />
+            {/* <img className="logo-abbr" src={logoWhite} alt="" /> */}
+            {/* <img className="logo-compact" src={logoTextWhite} alt="" /> */}
+            {/* <img className="brand-title" src={logoTextWhite} alt="" /> */}
           </Fragment>
         ) : (
           <Fragment>

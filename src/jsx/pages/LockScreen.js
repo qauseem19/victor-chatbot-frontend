@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
 
-import logo from '../../images/logo-full.png'
+// import logo from '../../images/logo-full.png'
 
 const LockScreen = () => {
    const nav = useNavigate();
@@ -20,7 +20,7 @@ const LockScreen = () => {
                         <div className="col-xl-12">
                            <div className="auth-form">
                               <div class="text-center mb-3">
-                                 <Link to={"/dashboard"}><img src={logo} alt="" /></Link>
+                                 {/* <Link to={"/dashboard"}><img src={logo} alt="" /></Link> */}
                               </div>
                               <h4 className="text-center mb-4">
                                  Account Locked

@@ -156,7 +156,7 @@ const DynamicModal = ({
           {({ errors, touched }) => (
             <FormikForm>
             <Form.Group className="mb-3">
-  <Form.Label>Upload Profile Image</Form.Label> {/* Add Label Here */}
+  <Form.Label>Upload Character Image</Form.Label> {/* Add Label Here */}
   <div className="d-flex justify-content-center mb-4">
     <div
       className="profile-circle"

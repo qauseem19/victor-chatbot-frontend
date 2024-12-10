@@ -25,11 +25,11 @@ export const MenuList = [
         iconStyle: <i className="flaticon-381-network"></i>,
         to: 'table-subscribers',
     },
-    {
-        title:'Chat',
-        classsChange: 'mm-collapse',
-        iconStyle: <i className="fa-brands fa-rocketchat"></i>,
-        to: 'ui-modal',
-    },
+    // {
+    //     title:'Chat',
+    //     classsChange: 'mm-collapse',
+    //     iconStyle: <i className="fa-brands fa-rocketchat"></i>,
+    //     to: 'ui-modal',
+    // },
     
 ]

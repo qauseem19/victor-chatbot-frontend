@@ -15,7 +15,7 @@ const Products = ({
           <div className="new-arrivals-img-contnent">
               <img
                 src={image}
-                className="img-fluid rounded-circle"
+                className="img-fluid rounded-circle" style={{height:"27vh"}}
               />
             </div>
             <div className="new-arrival-content text-center mt-3">

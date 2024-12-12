@@ -38,7 +38,8 @@ const ProductGrid = () => {
       name: "prompt",
       type: "textarea",
       placeholder: "Enter Prompt Text Here to Generate New AI Character",
-    },
+      required: true,
+        },
   ];
 
   // Fetch all products from the API
